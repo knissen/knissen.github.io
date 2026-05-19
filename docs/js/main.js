@@ -43,11 +43,4 @@
     });
   }
 
-  // Make entire project card clickable via data-href attribute
-  document.querySelectorAll('.project-card[data-href]').forEach(function (card) {
-    card.addEventListener('click', function () {
-      window.location.href = card.dataset.href;
-    });
-  });
-
 }());
