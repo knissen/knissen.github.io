@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Skill(superpowers:brainstorming)"
+      "Skill(superpowers:brainstorming)",
+      "Bash(git -C \"D:\\\\Work\\\\PorfolioWebsite\" add docs/)",
+      "Bash(git -C \"D:\\\\Work\\\\PorfolioWebsite\" rm -r --cached website/)",
+      "Bash(git -C \"D:\\\\Work\\\\PorfolioWebsite\" status)",
+      "Bash(git -C 'D:\\\\Work\\\\PorfolioWebsite' commit -m ' *)",
+      "Bash(git -C \"D:\\\\Work\\\\PorfolioWebsite\" push)",
+      "Bash(git -C \"D:\\\\Work\\\\PorfolioWebsite\" diff --stat)",
+      "Bash(git -C \"D:\\\\Work\\\\PorfolioWebsite\" add docs/css/style.css docs/index.html)"
     ]
   }
 }
