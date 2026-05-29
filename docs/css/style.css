@@ -116,15 +116,19 @@ nav.scrolled {
   nav.nav-open .nav-hamburger span:nth-child(3) {
     transform: translateY(-6px) rotate(-45deg);
   }
+
+  #hero {
+    min-height: 100vh;
+    justify-content: center;
+  }
 }
 
 /* ── HERO ── */
 #hero {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 100px 24px 60px;
+  justify-content: flex-start;
+  padding: 150px 24px 120px;
   position: relative;
   overflow: hidden;
 }
