@@ -9,6 +9,8 @@
   --border: #222230;
   --card: #13131a;
   --orange: #ff8844;
+  --mainfontsize: 14px;
+  --smallfontsize: 12px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -121,6 +123,11 @@ nav.scrolled {
     min-height: 100vh;
     justify-content: center;
   }
+
+  .project-thumb-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
 }
 
 /* ── HERO ── */
@@ -196,7 +203,7 @@ nav.scrolled {
 }
 
 .hero-bio {
-  font-size: 14px;
+  font-size: var(--mainfontsize);
   color: var(--muted);
   max-width: 380px;
   margin-bottom: 36px;
@@ -401,7 +408,7 @@ section {
   background: rgba(10,10,12,0.8);
   border: 1px solid var(--border);
   padding: 4px 8px;
-  font-size: 11px;  
+  font-size: var(--smallfontsize);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent);
@@ -440,7 +447,7 @@ section {
 }
 
 .project-desc {
-  font-size: 11px;
+  font-size: var(--mainfontsize);
   color: var(--muted);
   line-height: 1.7;
   margin-bottom: 16px;
@@ -453,7 +460,7 @@ section {
 }
 
 .tag {
-  font-size: 9px;
+  font-size: var(--smallfontsize);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 3px 8px;
@@ -515,7 +522,7 @@ section {
 .project-thumb-img {
   display: block;
   width: 30%;
-  min-width: 100px;
+  min-width: 250px;
   object-fit: cover;
   margin: 12px 0 16px;
 }
